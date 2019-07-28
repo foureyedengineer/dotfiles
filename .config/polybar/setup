@@ -1,0 +1,8 @@
+git clone --recursive https://github.com/polybar/polybar
+cd polybar
+./build.sh
+#Then let it run until its done
+
+# ignore these for now
+sudo apt-get install build-essential git cmake cmake-data pkg-config python3-sphinx
+sudo apt-get install libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
