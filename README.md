@@ -1,3 +1,7 @@
 # LinuxMintCustomization-i3
 
-My configuration file for my linux set up. I am using i3 on linux mint and playing around with it currently!
+My configuration file for my linux set up. (WIP)
+
+HW: Dell Precision M4800
+WM: i3
+OS: Cinnamon 19
