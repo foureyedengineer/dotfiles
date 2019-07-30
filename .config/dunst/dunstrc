@@ -1,21 +1,20 @@
 [frame]
     width = 2
-    color = "#eae9e9"
+    color = "#6A8554"
 
 [urgency_low]
-    background = "#2c2c2c"
-    foreground = "#eae9e9"
+    background = "#35422A"
+    foreground = "#ffffff"
     timeout = 10
 
 [urgency_normal]
-    background = "#2c2c2c"
-    foreground = "#eae9e9"
+    background = "#35422A"
+    foreground = "#ffffff"
     timeout = 10
 
 [urgency_critical]
-    background = "#2c2c2c"
-    foreground = "#eae0e0"
-    frame = "#b66d6d"
+    background = "#35422A"
+    foreground = "#000000"
     timeout = 0
 
 [global]
@@ -26,7 +25,7 @@
     #   %i  iconname (including its path)
     #   %I  iconname (without its path)
     #   %p  progress value if set ([  0%] to [100%]) or nothing
-    format = "<b>%s</b>\n%b\n"
+    format = "%a\n<b>%s</b>\n%b\n%p"
 
     # The geometry of the window. Format: [{width}]x{height}[+/-{x}+/-{y}]
     # The height = number of notifications, all other variables are px
@@ -34,9 +33,9 @@
     # If width is 0, window will fit to longest message
     # Positive x value is measured from the left of the screen, negative x is measured from the right
     # Positive y value is measured from the top of the screen
-    geometry = "350x25-5-5"
+    geometry = "350x10-10+20"
 
-    font = Rubik 10
+    font = Circular Sp UI v3 T 10
     allow_markup = yes
     plain_text = no             # Treat message as plain text
     sort = yes                  # Sort messages by urgency
@@ -47,26 +46,25 @@
     word_wrap = yes             # Split notifications into multiple lines if they don't fit into geometry
     ignore_newline = no         # Ignore "\n"
     transparency = 0           # The transparency of the window. 0 (opaque) to 100 (transparent) - requires compositing window manager (xcompmgr, compiz, compton, etc)
-    shrink = no                # Shrink window if it's smaller than the width (ignored if width is 0)
+    shrink = yes                 # Shrink window if it's smaller than the width (ignored if width is 0)
     monitor = 0                 # Display notifications on the monitor indicated (0 is default)
     follow = none               # Follow mouse/keyboard/none
     show_indicators = no        # Display indicators for URLs (U) and actions (A)
     line_height = 1             # The spacing between lines (forced to height of font at minimum)
     notification_height =      # The height of the entire notification (forced to height of font height and padding at minimum)
-    separator_height = 1     # Space in pixels between two notifications
+    separator_height = 2     # Space in pixels between two notifications
     padding = 8                 # Padding between text and separator
     horizontal_padding = 8      # Horizontal padding
     separator_color = frame     # Color for separator: auto/foreground/frame/X color
     icon_position = left        # Align icons left/right/off
-    max_icon_size = 48
 
     idle_threshold = 120        # Don't remove messages if the user is idle (no mouse or keyboard input) for longer than idle_threshold seconds
     sticky_history = yes        # Make notifications remain until clicked on (yes) or timeout as normal (no) when recalled from history
     history_length = 20         # Maximum amount of notifications kept in history
 
-    icon_folders = $HOME/.icons/oomox-doujin
+    icon_folders = /usr/share/icons/Papirus-Dark/16x16
     startup_notification = true
-    dmenu = rofi -dmenu  dunst:
+    dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/google-chrome
 
 [shortcuts]
