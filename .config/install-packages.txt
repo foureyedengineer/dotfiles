@@ -1,0 +1,10 @@
+If these files do not already exist in the distro, install
+
+playerctl
+suckless-tools
+feh
+
+Fonts:
+YosemiteSanFrancisco
+Fira Code
+FontAwesome
