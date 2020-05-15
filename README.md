@@ -1,4 +1,4 @@
-# LinuxMintCustomization-i3
+# LinuxCustomization-i3
 
 My configuration file for my linux set up. (WIP)
 
