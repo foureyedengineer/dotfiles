@@ -36,14 +36,14 @@ override-redirect = false
 # show-desktop: Display desktop (i3 only)
 
 # Primary modules
-primary-left = i3 title
+primary-left = i3
 primary-center =
-primary-right = volume network date battery
+primary-right = battery
 
 # Secondary modules
-secondary-left = i3
+secondary-left = i3 title
 secondary-center =
-secondary-right =
+secondary-right = volume network date battery
 
 # global style
 line-size = 1
